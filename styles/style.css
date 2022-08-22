@@ -1,0 +1,13 @@
+body{
+    background-color: #151826;
+}
+
+#header{
+    font-family: 'Aboreto', cursive;
+}
+
+.bg-img{
+    background-image: url(../images/header-bg.jpg);
+    width: 100%;
+    height: 50vh;
+}
