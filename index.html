@@ -35,42 +35,42 @@
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-lg-5 mb-md-4 mb-sm-3 mb-3">
                         <div class="card border-0 bg-dark-blue">
                             <img src="./images/players/shroud.png" class="card-img img-fluid" alt="...">
-                            <div class="design-body">
-                                <h5 class="text-center text-white pt-4 px-3">SHROUD</h4>
+                            <div>
+                                <h5 class="text-center text-white pt-4 px-3" id="player-name">SHROUD</h4>
                                 <p class="fw-normal text-center text-white pt-1 mb-4">TEAM SENTINELS</p>
-                                <button class="btn btn-danger px-5 d-block mx-auto mb-4">SELECT</button>
+                                <button id="player-select-btn" class="btn btn-danger px-5 d-block mx-auto mb-4" onclick = "addToPlayerListPanel(this) " >SELECT</button>
                             </div>
                         </div>
                     </div> 
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-lg-5 mb-md-4 mb-sm-3 mb-3">
                         <div class="card border-0 bg-dark-blue">
                             <img src="./images/players/derrek.png" class="card-img img-fluid" alt="...">
-                            <div class="design-body">
-                                <h5 class="text-center text-white pt-4 px-3">DERREK</h4>
+                            <div>
+                                <h5 class="text-center text-white pt-4 px-3" id="player-name">DERREK</h4>
                                 <p class="fw-normal text-center text-white pt-1 mb-4">TEAM 100 THIEVES</p>
-                                <button class="btn btn-danger px-5 d-block mx-auto mb-4">SELECT</button>
+                                <button id="player-select-btn" class="btn btn-danger px-5 d-block mx-auto mb-4" onclick = "addToPlayerListPanel(this)" >SELECT</button>
                             </div>
                         </div>
                     </div> 
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-lg-5 mb-md-4 mb-sm-3 mb-3">
                         <div class="card bg-dark-blue border-0">
                             <img src="./images/players/scream.png" class="card-img img-fluid" alt="...">
-                            <div class="design-body">
-                                <h5 class="text-center text-white pt-4 px-3">SCREAM</h4>
+                            <div id="player-card">
+                                <h5 class="text-center text-white pt-4 px-3" id="player-name">SCREAM</h4>
                                 <p class="fw-normal text-center text-white pt-1 mb-4">TEAM LIQUID</p>
-                                <button class="btn btn-danger px-5 d-block mx-auto mb-4">SELECT</button>
+                                <button id="player-select-btn" class="btn btn-danger px-5 d-block mx-auto mb-4" onclick = "addToPlayerListPanel(this)" >SELECT</button>
                             </div>
                         </div>
                     </div> 
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-lg-5 mb-md-4 mb-sm-3 mb-3">
                         <div class="card bg-dark-blue">
-                            <h2 class="text-danger mt-5 mb-5 pt-5 pb-5 text-center">Selected Five</h2>
-                            <ol class="ms-3 text-white mb-5">
-                                <li class="pb-4 fw-bold mb-1 ps-3">SCREAM</li>
-                                <li class="pb-4 fw-bold mb-1 ps-3">SHROUD</li>
-                                <li class="pb-4 fw-bold ps-3">TENZ</li>
-                                <li class="pb-4 fw-bold ps-3">ASUNA</li>
-                                <li class="pb-5 mb-5 fw-bold ps-3">DISPENSER</li>
+                            <h2 class="text-danger mt-5 mb-5 pt-5 pb-5 text-center fw-bold">Selected: <span id="player-quantity">0</span></h2>
+                            <ol class="ms-3 text-white mb-5" id="player-list-panel">
+                                <!-- <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li> -->
                             </ol>
                         </div>
                     </div> 
@@ -79,39 +79,39 @@
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-lg-5 mb-md-4 mb-sm-3 mb-3">
                         <div class="card bg-dark-blue border-0">
                             <img src="./images/players/borkum.png" class="card-img img-fluid" alt="...">
-                            <div class="design-body">
-                                <h5 class="text-center text-white pt-4 px-3">BORKUM</h4>
+                            <div id="player-card">
+                                <h5 class="text-center text-white pt-4 px-3" id="player-name">BORKUM</h4>
                                 <p class="fw-normal text-center text-white pt-1 mb-4">TEAM SECRET</p>
-                                <button class="btn btn-danger px-5 d-block mx-auto mb-4">SELECT</button>
+                                <button id="player-select-btn" class="btn btn-danger px-5 d-block mx-auto mb-4" onclick = "addToPlayerListPanel(this)">SELECT</button>
                             </div>
                         </div>
                     </div> 
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-lg-5 mb-md-4 mb-sm-3 mb-3">
                         <div class="card bg-dark-blue border-0">
                             <img src="./images/players/tenz.png" class="card-img img-fluid" alt="...">
-                            <div class="design-body">
-                                <h5 class="text-center text-white pt-4 px-3">TENZ</h4>
+                            <div id="player-card">
+                                <h5 class="text-center text-white pt-4 px-3" id="player-name">TENZ</h4>
                                 <p class="fw-normal text-center text-white pt-1 mb-4">TEAM SENTINELS</p>
-                                <button class="btn btn-danger px-5 d-block mx-auto mb-4">SELECT</button>
+                                <button id="player-select-btn" class="btn btn-danger px-5 d-block mx-auto mb-4" onclick = "addToPlayerListPanel(this)">SELECT</button>
                             </div>
                         </div>
                     </div> 
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-lg-5 mb-md-4 mb-sm-3 mb-3">
                         <div class="card bg-dark-blue border-0">
                             <img src="./images/players/asuna.png" class="card-img img-fluid" alt="...">
-                            <div class="design-body">
-                                <h5 class="text-center text-white pt-4 px-3">ASUNA</h4>
+                            <div id="player-card">
+                                <h5 class="text-center text-white pt-4 px-3" id="player-name">ASUNA</h4>
                                 <p class="fw-normal text-center text-white pt-1 mb-4">TEAM 100 THIEVES</p>
-                                <button class="btn btn-danger px-5 d-block mx-auto mb-4">SELECT</button>
+                                <button id="player-select-btn" class="btn btn-danger px-5 d-block mx-auto mb-4" onclick = "addToPlayerListPanel(this)">SELECT</button>
                             </div>
                         </div>
                     </div> 
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-lg-5 mb-md-4 mb-sm-3 mb-3">
                         <div class="card bg-dark-blue">
-                            <h2 class="text-danger mt-5 mb-5 text-center">Budget</h2>
+                            <h2 class="text-danger fw-bold mt-5 mb-5 text-center">Budget</h2>
                             <div>
                                 <label for="Cost Per Player" class="text-white text-center"> Cost Per Player ($)
-                                    <input class="mt-1 py-1 rounded-3" type="text">
+                                    <input class="mt-1 py-1 rounded-3 text-center fw-bold" type="text">
                                 </label>
                                 <button class="btn btn-danger d-block mx-auto px-5 mt-3 rounded-3 mb-3">CALCULATE</button>
                                 <h6 class="text-white text-center mb-3"><span>Total Cost of 5 Players</span></h6>
@@ -135,10 +135,20 @@
     </main>
     <!-- Main Section Ends -->
 
+    <!-- Footer Starts -->
+    <footer>
+        <div class="bg-danger pb-5 pt-5">
+            <h3 class="pt-4 text-white text-center fw-bolder">FIVE STACK EXPENSE TRACKER</h3>
+            <p class="text-white text-center">Copyright @ 2022 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
 
 
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
     "></script>
+    <script src="./scripts/player-panel.js"></script>
 </body>
 </html>
