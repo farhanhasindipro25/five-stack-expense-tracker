@@ -21,7 +21,6 @@ function addToPlayerListPanel(element){
 
 function getPlayerQuantity(elementId){
     document.getElementById(elementId).innerText = fiveStack.length; 
-    // return fiveStack.length
 }
 
 function displayPlayers(fiveStack){
